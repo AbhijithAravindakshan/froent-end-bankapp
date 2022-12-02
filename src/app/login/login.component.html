@@ -1,0 +1,35 @@
+<section class="vh-100" style="background-size: cover; background-image: url(../../assets/images/ISC-new-Finance-page-picture-1-e1574360213974.jpg);">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-50 w-100">
+        <div class="col- col-md- col-lg- col-xl-4">
+          <div class="card-body p-4 text-center" style="border-radius: 1rem;">
+            <div class="card-body p-2 text-center">
+                
+                    <img src="../../assets/images/bank_PNG24.png" alt="" class="h-50 w-50">
+  
+              <h3 class="mb-5">LOGIN</h3>
+              <h6>{{aim}}</h6>
+  
+              <div class="form-outline mb-2">
+                <label class="form-label" for="acno">ACCOUNT NUMBER</label>
+                <input (change)="acnoChange($event)" type="number" id="acno" [placeholder]="account" class="form-control form-control-lg" />
+              </div>
+  
+              <div class="form-outline mb-2">
+                <label class="form-label" for="pswd">Password</label>
+                <input (change)="pswdChange($event)" type="password" id="pswd" placeholder="Enter password" class="form-control form-control-lg" />
+              </div>
+  
+              <!-- Checkbox -->
+              
+               <a href="">forget Password</a>or<a href="">Register</a><br><br>
+              
+  
+             <button class="btn btn-outline-success col-md-10" (click)="login()" type="submit">Login</button>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
